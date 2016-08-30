@@ -1,0 +1,50 @@
+doctype html
+head
+  meta(charset='utf-8')
+  title
+    block title
+  meta(name='description', content='Product Page')
+  meta(name='author', content='SitePoint')
+  link(rel='stylesheet', href='http://www.rrcellars.com/wp-content/themes/highgrove/css/bootstrap.min.css', type='text/css', media='all')
+  link(rel='stylesheet', href='http://www.rrcellars.com/wp-content/themes/highgrove/style.css', type='text/css', media='all')
+  link(rel='stylesheet', href='http://www.rrcellars.com/wp-content/themes/highgrove/css/font-awesome.min.css', type='text/css', media='all')
+  link(rel='stylesheet', href='css/styles.css', type='text/css')
+body
+  header#masthead.site-header(role='banner')
+    nav#site-navigation.navbar.navbar-default.affix-top(role='navigation')
+      .container-fluid
+        .navbar-header
+          button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar-collapse')
+            span.sr-only Toggle navigation
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.navbar-brand(href='http://www.rrcellars.com/', rel='home')
+            img(src='http://www.rrcellars.com/wp-content/uploads/2016/07/rr-logo-sm.png', alt='Robert Ramsay Cellars')
+        #navbar-collapse.collapse.navbar-collapse
+          ul#menu-main-menu.nav.navbar-nav.navbar-left.nav-primary.nav-menu(aria-expanded='false')
+            li#menu-item-645.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-home.menu-item-645
+              a(href='http://www.rrcellars.com/') Home
+            li#menu-item-844.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-844
+              a(href='http://www.rrcellars.com/wines/') Wines
+            li#menu-item-737.menu-item.menu-item-type-custom.menu-item-object-custom.menu-item-737
+              a(href='http://www.rrcellars.com/news/') Events
+            li#menu-item-635.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-635
+              a(href='http://www.rrcellars.com/gallery/') Gallery
+            li#menu-item-712.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-712
+              a(href='http://www.rrcellars.com/wine-club/') Wine Club
+            li#menu-item-752.menu-item.menu-item-type-post_type.menu-item-object-page.menu-item-752
+              a(href='http://www.rrcellars.com/press/') Press
+          ul.nav.navbar-nav.navbar-right
+            li.login
+              a(href='#') Login
+            li.my-account(style='display: none;')
+              a(href='#') My Account
+            li.cart-link
+              a(href='#')
+                span.fa.fa-shopping-cart
+                span.cart-amount 1
+
+  block content
+
+  include footer.pug

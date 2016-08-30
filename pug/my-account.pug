@@ -1,0 +1,208 @@
+extends layout/layout.pug
+
+block title
+  | My Account
+
+block content
+  section.section
+    .container
+      .row
+        .col-sm-12
+          h1.normal-title My Account
+      .row
+        .col-sm-6
+          .row
+            .col-sm-12
+              h3.normal-title Change Password
+              // Error State Example
+              form
+                .form-group.has-error
+                  label
+                    | Current Password 
+                    span.required *
+                  input.form-control(type='password')
+            .col-sm-12
+              .form-group
+                label
+                  | New Password 
+                  span.required *
+                input.form-control(type='password')
+            .col-sm-12
+              .form-group
+                label
+                  | Confirm New Password 
+                  span.required *
+                input.form-control(type='password')
+            .col-sm-12
+              .text-right
+                input.btn.btn-primary.btn-lg(type='submit', value='Save')
+          .row
+            .col-sm-12
+              h3.normal-title Billing Details
+              .form-group
+                label
+                  | Email Address 
+                  span.required *
+                input.form-control(type='text', value='george@washington.com')
+          .row
+            .col-sm-12
+              .form-group
+                label
+                  | First Name 
+                  span.required *
+                input.form-control(type='text', value='George')
+          .row
+            .col-sm-12
+              .form-group
+                label
+                  | Last Name 
+                  span.required *
+                input.form-control(type='text', value='Washington')
+          .row
+            .col-sm-12
+              .form-group
+                label Company
+                input.form-control(type='text', value='Apples Inc.')
+          .row
+            .col-sm-12
+              .form-group
+                label
+                  | Address 
+                  span.required *
+                input.form-control(type='text', value='1600 W. Pennsylvania Ave.')
+          .row
+            .col-sm-12
+              .form-group
+                label Address 2
+                input.form-control(type='text')
+          .row
+            .col-sm-12
+              .form-group
+                label
+                  | City 
+                  span.required *
+                input.form-control(type='text', value='Seattle')
+          .row
+            .col-sm-12
+              .form-group
+                label
+                  | Country 
+                  span.required *
+                select.form-control
+                  option(value='') Select Country
+                  option(selected='selected', value='United States') United States
+                  option(value='Canada') Canada
+          .row
+            .col-sm-8
+              .form-group
+                label
+                  | State/Province 
+                  span.required *
+                select.form-control
+                  option Select State/Province
+                  option(selected='selected') Washington
+            .col-sm-4
+              .form-group
+                label
+                  | Zip Code 
+                  span.required *
+                input.form-control(type='text', value='90876')
+          .row
+            .col-sm-6
+              .form-group
+                label
+                  | Phone 
+                  span.required *
+                input.form-control(type='text', value='509-123-4567')
+            .col-sm-6
+              .form-group
+                label Fax
+                input.form-control(type='text')
+          .row
+            .col-sm-12
+              .checkbox
+                label
+                  input(type='checkbox')
+                  strong Sign up for our newsletter
+        .col-sm-6
+          h3.normal-title Shipping Address
+          .row
+            .col-sm-12
+              .form-group
+                label
+                  input(type='checkbox', checked='')
+                  |  Same as billing address?
+          .row
+            .col-sm-12
+              .form-group
+                label
+                  | First Name 
+                  span.required *
+                input.form-control(type='text', value='George')
+          .row
+            .col-sm-12
+              .form-group
+                label
+                  | Last Name 
+                  span.required *
+                input.form-control(type='text', value='Washington')
+          .row
+            .col-sm-12
+              .form-group
+                label Company
+                input.form-control(type='text', value='Apples inc.')
+          .row
+            .col-sm-12
+              .form-group
+                label
+                  | Address 
+                  span.required *
+                input.form-control(type='text', value='1600 W. Pennsylvania Ave.')
+          .row
+            .col-sm-12
+              .form-group
+                label Address 2
+                input.form-control(type='text')
+          .row
+            .col-sm-12
+              .form-group
+                label
+                  | City 
+                  span.required *
+                input.form-control(type='text', value='Seattle')
+          .row
+            .col-sm-12
+              .form-group
+                label
+                  | Country 
+                  span.required *
+                select.form-control
+                  option(value='') Select Country
+                  option(selected='selected', value='United States') United States
+                  option(value='Canada') Canada
+          .row
+            .col-sm-8
+              .form-group
+                label
+                  | State/Province 
+                  span.required *
+                select.form-control
+                  option(value='') Select State/Province
+                  option(selected='selected') Washington
+            .col-sm-4
+              .form-group
+                label
+                  | Zip Code 
+                  span.required *
+                input.form-control(type='text', value='90876')
+          .row
+            .col-sm-6
+              .form-group
+                label
+                  | Phone 
+                  span.required *
+                input.form-control(type='text', value='509-123-4567')
+            .col-sm-6
+              .form-group
+                label Fax
+                input.form-control(type='text')

@@ -1,0 +1,74 @@
+extends layout/layout.pug
+
+block title
+  | Shopping Cart
+
+block content
+  section.section.cart-table
+    .container
+      h1.normal-title
+        | Your Cart
+      form(action='', method='post')
+        table.shop-table(cellspacing='0')
+          thead
+            tr
+              th.product-remove(style='width: 40px;')  
+              th.product-name Product
+              th.product-price Price
+              th.product-quantity Quantity
+              th.product-subtotal Total
+          tbody
+            tr.cart_item
+              td.product-remove
+                a.remove(href='#', title='Remove this item') ×
+              td.product-name(data-title='Product')
+                a(href='#') 2012 Mourvedre
+              td.product-price(data-title='Price')
+                | $35.00
+              td.product-quantity(data-title='Quantity')
+                .quantity
+                  input.input-text.qty.text(type='number', value='1', title='Qty', size='4')
+              td.product-subtotal(data-title='Total')
+                | $35.00
+            tr.cart_item
+              td.product-remove
+                a.remove(href='#', title='Remove this item') ×
+              td.product-name(data-title='Product')
+                a(href='#') 2011 Phinny Hill Cabernet Sauvignon
+              td.product-price(data-title='Price')
+                | $35.00
+              td.product-quantity(data-title='Quantity')
+                .quantity
+                  input.input-text.qty.text(type='number', value='2', title='Qty', size='4')
+              td.product-subtotal(data-title='Total')
+                | $70.00
+            tr
+              td.actions(colspan='6')
+                .pull-right
+                  a(href='#') Empty Cart
+                  | &nbsp;&nbsp;
+                  input.btn.btn-default(type='submit', name='update_cart', value='Update Cart')
+                  input#_wpnonce(type='hidden', name='_wpnonce', value='878e7feaa8')
+                  input(type='hidden', name='_wp_http_referer', value='/themes/highgrove/winery/cart/')
+        .row.bottom-checkout
+          .col-sm-6.col-sm-offset-6.cart-totals
+            h3.normal-title Cart Totals
+            table.shop-table(cellspacing='0')
+              tbody
+                tr.cart-subtotal
+                  th Subtotal
+                  td(data-title='Subtotal')
+                    | $105.00
+                tr.order-total
+                  th Total
+                  td(data-title='Total')
+                    strong $105.00
+            .proceed-to-checkout
+              a.btn.btn-primary.btn-lg.btn-block(href='#')
+                | Proceed to Checkout
+                span.fa.fa-arrow-circle-right
+              a(href='#')
+                span.fa.fa-arrow-circle-left
+                |  Continue Shopping
+
+  

@@ -1,0 +1,22 @@
+extends layout/layout.pug
+
+block title
+  | Log In
+
+block content
+  section.section
+    .container
+      .row
+        .col-md-6.col-md-offset-3.login-form
+          h1.normal-title Login
+          .form-group
+            label Email/Username
+            input.form-control(type='text')
+          .form-group
+            label.pull-left Password
+            a.pull-right(href='#') Forgot Password?
+            input.form-control(type='password')
+          a.btn.btn-primary.btn-lg.btn-block(href='#') Login
+          .sign-up.text-center
+            h4.normal-title Don't have an account?
+            a(href='#') Create an Account
