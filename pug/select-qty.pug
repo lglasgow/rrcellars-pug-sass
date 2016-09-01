@@ -7,6 +7,9 @@ block content
   section.section.cart-table
     .container
       h1.normal-title Select Quantity
+      .alert.alert-success
+        span.fa.fa-check-circle
+        | &nbsp; 2010 Red Wine was added to your cart
       form(action='file:///Users/leeglasgow/OneDrive/Design%20Assets/RRCellars/cart.html', method='post')
         table.shop-table(cellspacing='0')
           thead
@@ -29,7 +32,7 @@ block content
             tr
               td.actions(colspan='6')
                 .pull-right
-                  a(href='http://rrcellars.com/wines/')
+                  a.take-back(href='http://rrcellars.com/wines/')
                     span.fa.fa-arrow-circle-left
                     |  Maybe later, take me back
                   | &nbsp; &nbsp;
