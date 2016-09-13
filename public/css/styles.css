@@ -62,6 +62,12 @@ a {
 #home {
   background-position: center center; }
 
+.section {
+  padding: 60px 0; }
+  @media (min-width: 992px) {
+    .section {
+      padding: 90px 0; } }
+
 footer .site-info {
   padding: 40px 0; }
   footer .site-info a {
@@ -812,3 +818,7 @@ h3.normal-title {
   padding: 15px; }
   .sign-up h4 {
     margin-bottom: 5px; }
+
+.take-back {
+  padding-bottom: 10px;
+  display: inline-block; }

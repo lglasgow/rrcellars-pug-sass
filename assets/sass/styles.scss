@@ -87,6 +87,12 @@ a {
     background-position: center center;
 }
 
+.section {
+  padding: 60px 0;
+  @media(min-width: 992px) {
+    padding: 90px 0;
+  }
+}
 
 // Footer items
 
@@ -1035,4 +1041,9 @@ h3.normal-title {
   h4 {
     margin-bottom: 5px;
   }
+}
+
+.take-back {
+  padding-bottom: 10px;
+  display: inline-block;
 }
