@@ -61,7 +61,7 @@ a {
 
 .btn-lg {
   font-size: 22px;
-  padding: 13px 30px;  
+  padding: 13px 30px;
 }
 
 .btn-primary {
@@ -695,6 +695,7 @@ div.panel {
       height: 5px;
     }
     a {
+      display: block !important;
       img {
         cursor: inherit !important;
         border-radius: 0 !important;
@@ -708,7 +709,7 @@ div.panel {
         text-transform: uppercase !important;
         font-size: 2.8rem !important;
         color: $deep-red !important;
-        margin: 40px 15px 0;
+        margin: 40px 20px 0 !important;
       }
       &:hover {
         h3 {
@@ -717,7 +718,7 @@ div.panel {
       }
     }
     p {
-      padding: 0 15px;
+      padding: 0 20px;
     }
     .price {
       display: none;
@@ -786,7 +787,7 @@ div.panel {
     -webkit-transition: none !important;
     transition: none !important;
     img {
-      opacity: 1;
+      opacity: 1 !important;
       transition: none !important;
       -webkit-transition: none !important;
       transform: none !important;
