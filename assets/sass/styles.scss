@@ -17,6 +17,10 @@ body {
 
 // Basic stuff
 
+p {
+  font-size: 16px;
+}
+
 h4, h5, h6 {
     margin-top: 0;
 }
@@ -87,6 +91,13 @@ a {
     background-position: center center;
 }
 
+.home-mast {
+  height: 200px;
+  @media (min-width: 768px) {
+    height: 600px;
+  }
+}
+
 .section {
   padding: 60px 0;
   @media(min-width: 992px) {
@@ -129,12 +140,24 @@ footer {
   }
 }
 
+.about-top-area {
+  margin-bottom: 70px;
+  h2 {
+    margin-top: 0;
+  }
+  p {
+    line-height: 1.7;
+  }
+}
+
 .overlay:after {
-    background-image: none !important;
+  background-image: none !important;
 }
 
 .footer-section {
-  padding-bottom: 90px;
+  @media(min-width: 768px) {
+    padding-bottom: 90px;
+  }
 }
 
 .sidebar-footer {
@@ -173,10 +196,18 @@ footer {
 }
 
 .section-title {
+
     font-family: 'Julius Sans One', sans-serif;
     font-size: 70px;
     font-weight: normal;
     line-height: .9;
+}
+
+.section-title.title-lg {
+  font-size: 50px;
+  @media (min-width: 768px) {
+    font-size: 72px;
+  }
 }
 
 .bg-right {
@@ -402,20 +433,26 @@ header.entry-header p {
     color: #fff;
 }
 
-.type-page > .entry-header {
-    margin: -1px 0 0 0;
-    padding: 200px 0;
-}
-
 .dark-section .section-header > p {
     color: #fff;
 }
 
+.type-page > .entry-header {
+  margin: -1px 0 0 0;
+  padding: 60px 0;
+  @media (min-width: 768px) {
+    padding: 200px 0;
+  }
+}
+
 .page h1.entry-title {
     font-family: 'Julius Sans One', sans-serif;
-    font-size: 80px;
+    font-size: 60px;
     font-weight: normal;
     line-height: 1;
+    @media (min-width: 768px) {
+      font-size: 80px;
+    }
 }
 
 .post h1.entry-title {
@@ -675,7 +712,7 @@ div.panel {
   margin-top: 20px;
   li.product {
     padding: 0 !important;
-    width: 33.33333333% !important;
+    width: 100% !important;
     margin: 30px 0 !important;
     background-color: #fff !important;
     min-height: 550px;
@@ -687,6 +724,10 @@ div.panel {
     @media (min-width: 768px){
       border-left: 15px solid $deep-red;
       border-right: 15px solid $deep-red;
+      width: 50% !important;
+    }
+    @media (min-width: 992px) {
+      width: 33.333333% !important;
     }
 
     &::after {
@@ -713,7 +754,7 @@ div.panel {
         font-family: 'Archivo Narrow' !important;
         font-weight: 700 !important;
         text-transform: uppercase !important;
-        font-size: 2.8rem !important;
+        font-size: 24px !important;
         color: $deep-red !important;
         margin: 40px 20px 0 !important;
       }
@@ -725,6 +766,7 @@ div.panel {
     }
     p {
       padding: 0 20px;
+      font-size: 16px !important;
     }
     .price {
       display: none;
