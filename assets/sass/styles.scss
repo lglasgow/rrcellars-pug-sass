@@ -651,6 +651,16 @@ header.entry-header p {
     }
 }
 
+.type-highgrove_dish.template-simple {
+  min-height:410px;
+  .entry-thumbnail {
+    padding-top: 0;
+    img {
+      margin-top: 30px;
+    }
+  }
+}
+
 .entry-thumbnail .img-thumbnail {
     border-color: $deep-red;
 }

@@ -497,6 +497,13 @@ header.entry-header p {
   .highgrove_dish .entry-title a {
     color: #232323; }
 
+.type-highgrove_dish.template-simple {
+  min-height: 410px; }
+  .type-highgrove_dish.template-simple .entry-thumbnail {
+    padding-top: 0; }
+    .type-highgrove_dish.template-simple .entry-thumbnail img {
+      margin-top: 30px; }
+
 .entry-thumbnail .img-thumbnail {
   border-color: #b92234; }
 
