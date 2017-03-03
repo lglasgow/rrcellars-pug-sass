@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url(https://fonts.googleapis.com/css?family=Julius+Sans+One|Archivo+Narrow:400,700|Source+Sans+Pro:400,600,700);
 body {
   line-height: 1.4;
@@ -62,6 +63,9 @@ a {
     background-color: transparent;
     color: #b92234;
     border-color: #b92234; }
+
+.text-white {
+  color: #fff; }
 
 #home {
   background-position: center center; }
@@ -195,7 +199,7 @@ footer .social-icons {
   color: #000; }
 
 .promotions {
-  background: url("http://www.rrcellars.com/wp-content/uploads/2016/03/tasting_room.jpg") bottom right no-repeat;
+  background: url("/wp-content/uploads/2016/03/tasting_room.jpg") bottom right no-repeat;
   background-size: cover; }
   .promotions li {
     list-style: none;
@@ -259,7 +263,7 @@ footer .social-icons {
   font-size: 14px; }
 
 #staff {
-  background-image: url(http://www.rrcellars.com/wp-content/uploads/2016/04/owner-bg.jpg);
+  background-image: url(/wp-content/uploads/2016/04/owner-bg.jpg);
   /* background-size: cover;*/
   background-position: bottom center;
   min-height: 620px;
@@ -316,7 +320,7 @@ footer .social-icons {
 
 .post-750,
 .paper-bg {
-  background-image: url(http://www.rrcellars.com/wp-content/uploads/2016/05/paper-bg.jpg);
+  background-image: url(/wp-content/uploads/2016/05/paper-bg.jpg);
   background-repeat: repeat;
   background-position: center top; }
 
@@ -325,6 +329,10 @@ header.entry-header p {
   font-weight: 700;
   font-size: 24px;
   color: #fff; }
+
+.landing-page-header {
+  height: 542px;
+  background-position: center center; }
 
 .dark-section .section-header > p {
   color: #fff; }
@@ -485,9 +493,15 @@ header.entry-header p {
 .type-page > .press-page {
   padding: 100px 0 0; }
 
+.landing-page .entry-title,
 .press-page .entry-title {
   color: #b92234; }
+  .landing-page .entry-title + p,
   .press-page .entry-title + p {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
     color: #232323; }
 
 .nav-isotope > li.active > a > hr:before,
@@ -597,7 +611,7 @@ div.panel {
     margin: 30px 0 !important;
     background-color: #fff !important;
     position: relative;
-    min-height: 620px;
+    min-height: 710px;
     border-left: 10px solid #b92234;
     border-right: 10px solid #b92234;
     clear: none; }
@@ -616,7 +630,7 @@ div.panel {
       content: '';
       position: absolute;
       bottom: -5px;
-      background-image: url(http://www.rrcellars.com/wp-content/uploads/2016/06/product-bottom.png);
+      background-image: url(/wp-content/uploads/2016/06/product-bottom.png);
       background-position: center bottom;
       background-repeat: repeat-x;
       width: 100%;
@@ -643,6 +657,9 @@ div.panel {
       .woocommerce-page ul.products li.product a:hover h3,
       .woocommerce ul.products li.product a:hover h3 {
         color: #000 !important; }
+      .woocommerce-page ul.products li.product a.btn,
+      .woocommerce ul.products li.product a.btn {
+        display: inline-block !important; }
     .woocommerce-page ul.products li.product p,
     .woocommerce ul.products li.product p {
       padding: 0 20px;
@@ -651,11 +668,14 @@ div.panel {
     .woocommerce ul.products li.product .price {
       display: none; }
 
+.summary.entry-summary .learn-more {
+  display: none; }
+
 .woocommerce-page ul.products li.product:after {
   content: '';
   position: absolute;
   bottom: -5px;
-  background-image: url(http://www.rrcellars.com/wp-content/uploads/2016/06/product-bottom.png);
+  background-image: url(/wp-content/uploads/2016/06/product-bottom.png);
   background-position: center bottom;
   background-repeat: repeat-x;
   width: 100%;
@@ -934,3 +954,97 @@ html.pum-open.pum-open-overlay.pum-open-scrollable body > [aria-hidden] {
 
 .sign-up-form .form-control {
   background-color: transparent; }
+
+.light-holiday-red .btn-container,
+.dark-holiday-red .btn-container {
+  position: absolute;
+  bottom: 40px;
+  width: calc(100% - 40px); }
+
+.btn-inverse {
+  border-color: #fff;
+  color: #fff;
+  background-color: transparent; }
+  .btn-inverse:active, .btn-inverse:focus {
+    border-color: #fff !important;
+    color: #fff !important; }
+
+.light-holiday-red {
+  background-color: #b92234;
+  padding: 20px 20px 40px; }
+  .light-holiday-red img {
+    width: 100%; }
+  .light-holiday-red .holiday-number {
+    background-color: #b92234; }
+
+.dark-holiday-red {
+  background-color: #a51825;
+  padding: 20px 20px 40px; }
+  .dark-holiday-red img {
+    width: 100%; }
+  .dark-holiday-red .holiday-number {
+    background-color: #a51825; }
+
+.holiday-number {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  padding: 5px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 60px;
+  color: #fff;
+  font-family: 'Archivo Narrow';
+  font-weight: 700;
+  line-height: 1.3;
+  position: relative;
+  top: -65px; }
+  .holiday-number:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    display: block;
+    height: 80px;
+    width: 80px;
+    border: 5px solid #fff;
+    border-radius: 50%; }
+
+.holiday-text {
+  margin-top: -70px;
+  color: #fff;
+  padding: 0 35px; }
+  .holiday-text p {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 35px; }
+
+.lp-red-bg {
+  padding: 20px 0; }
+
+.quote {
+  background-image: url(/wp-content/uploads/2015/08/wine-quote.jpeg);
+  background-size: cover;
+  height: 472px;
+  color: #fff;
+  padding: 60px 0; }
+
+.wine-quote {
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  line-height: 1.2;
+  position: relative;
+  margin-bottom: 20px; }
+  .wine-quote:before {
+    content: '“';
+    font-size: 8.2rem;
+    position: absolute;
+    left: -40px;
+    top: -20px;
+    line-height: 1; }
+  .wine-quote:after {
+    content: '”';
+    font-size: 8.2rem;
+    line-height: 0;
+    position: relative;
+    top: 45px; }

@@ -1,6 +1,7 @@
 @import url(https://fonts.googleapis.com/css?family=Julius+Sans+One|Archivo+Narrow:400,700|Source+Sans+Pro:400,600,700);
 
 $deep-red: #b92234;
+$holiday-red: #a51825;
 $dark-gray: #232323;
 $light-gray: #f6f5ed;
 $mid-gray: #ddd;
@@ -82,6 +83,10 @@ a {
     color: $deep-red;
     border-color: $deep-red;
   }
+}
+
+.text-white {
+  color: #fff;
 }
 
 // End Basic stuff
@@ -256,7 +261,7 @@ footer {
     color: #000;
 }
 .promotions {
-  background: url("http://www.rrcellars.com/wp-content/uploads/2016/03/tasting_room.jpg") bottom right no-repeat;
+  background: url("/wp-content/uploads/2016/03/tasting_room.jpg") bottom right no-repeat;
   background-size: cover;
   li {
     list-style:none;
@@ -343,7 +348,7 @@ footer {
 }
 
 #staff {
-  background-image: url(http://www.rrcellars.com/wp-content/uploads/2016/04/owner-bg.jpg);
+  background-image: url(/wp-content/uploads/2016/04/owner-bg.jpg);
  /* background-size: cover;*/
   background-position: bottom center;
   min-height: 620px;
@@ -428,7 +433,7 @@ footer {
 
 .post-750,
 .paper-bg {
-    background-image: url(http://www.rrcellars.com/wp-content/uploads/2016/05/paper-bg.jpg);
+    background-image: url(/wp-content/uploads/2016/05/paper-bg.jpg);
     background-repeat: repeat;
     background-position: center top;
 }
@@ -438,6 +443,11 @@ header.entry-header p {
     font-weight: 700;
     font-size: 24px;
     color: #fff;
+}
+
+.landing-page-header {
+  height: 542px;
+  background-position: center center;
 }
 
 .dark-section .section-header > p {
@@ -636,16 +646,21 @@ header.entry-header p {
     padding: 100px 0 0;
 }
 
+.landing-page .entry-title,
 .press-page .entry-title {
-    color: $deep-red;
-    + p {
-      color: $dark-gray;
-    }
+  color: $deep-red;
+  + p {
+    font-family: 'Archivo Narrow', sans-serif;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: $dark-gray;
+  }
 }
 
 .nav-isotope > li.active > a > hr:before,
 .nav-isotope > li:hover > a > hr:before {
-    border-top: 1px solid #b92234;
+    border-top: 1px solid $deep-red;
 }
 
 .highgrove_dish .entry-title {
@@ -769,7 +784,7 @@ div.panel {
     margin: 30px 0 !important;
     background-color: #fff !important;
     position: relative;
-    min-height: 620px;
+    min-height: 710px;
     border-left: 10px solid $deep-red;
     border-right: 10px solid $deep-red;
     clear: none;
@@ -786,7 +801,7 @@ div.panel {
       content: '';
       position: absolute;
       bottom: -5px;
-      background-image: url(http://www.rrcellars.com/wp-content/uploads/2016/06/product-bottom.png);
+      background-image: url(/wp-content/uploads/2016/06/product-bottom.png);
       background-position: center bottom;
       background-repeat: repeat-x;
       width: 100%;
@@ -815,6 +830,9 @@ div.panel {
           color: #000 !important;
         }
       }
+      &.btn {
+        display: inline-block !important;
+      }
     }
     p {
       padding: 0 20px;
@@ -834,11 +852,17 @@ div.panel {
 //     position: relative;
 // }
 
+.summary.entry-summary {
+  .learn-more {
+    display: none;
+  }
+}
+
 .woocommerce-page ul.products li.product:after {
     content: '';
     position: absolute;
     bottom: -5px;
-    background-image: url(http://www.rrcellars.com/wp-content/uploads/2016/06/product-bottom.png);
+    background-image: url(/wp-content/uploads/2016/06/product-bottom.png);
     background-position: center bottom;
     background-repeat: repeat-x;
     width: 100%;
@@ -1037,7 +1061,7 @@ h3.normal-title {
   white-space: normal;
   color: #fff;
   background-color: $deep-red;
-  border: 1px solid #b92234;
+  border: 1px solid $deep-red;
   padding: 15px;
   text-align: center;
   vertical-align: middle;
@@ -1182,5 +1206,117 @@ html.pum-open.pum-open-overlay.pum-open-scrollable body>[aria-hidden] {
   }
   .form-control {
     background-color: transparent;
+  }
+}
+
+// landing page
+.light-holiday-red,
+.dark-holiday-red {
+  .btn-container {
+    position: absolute;
+    bottom: 40px;
+    width: calc(100% - 40px);
+  }
+}
+.btn-inverse {
+  border-color: #fff;
+  color: #fff;
+  background-color: transparent;
+  &:active,
+  &:focus {
+    border-color: #fff !important;
+    color: #fff !important;
+  }
+}
+.light-holiday-red {
+  background-color: $deep-red;
+  padding: 20px 20px 40px;
+  img {
+    width: 100%;
+  }
+  .holiday-number {
+    background-color: $deep-red;
+  }
+}
+
+.dark-holiday-red {
+  background-color: $holiday-red;
+  padding: 20px 20px 40px;
+  img {
+    width: 100%;
+  }
+  .holiday-number {
+    background-color: $holiday-red;
+  }
+}
+
+.holiday-number {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  padding: 5px;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 60px;
+  color: #fff;
+  font-family: 'Archivo Narrow';
+  font-weight: 700;
+  line-height: 1.3;
+  position: relative;
+  top: -65px;
+  &:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    display: block;
+    height: 80px;
+    width: 80px;
+    border: 5px solid #fff;
+    border-radius: 50%;
+  }
+}
+.holiday-text {
+  margin-top: -70px;
+  color: #fff;
+  padding: 0 35px;
+  p {
+    font-size: 20px;
+    line-height: 1.8;
+    margin-bottom: 35px;
+  }
+}
+
+.lp-red-bg {
+  padding: 20px 0;
+}
+
+.quote {
+  background-image: url(/wp-content/uploads/2015/08/wine-quote.jpeg);
+  background-size: cover;
+  height: 472px;
+  color: #fff;
+  padding: 60px 0;
+}
+.wine-quote {
+  font-size: 2.8rem;
+  text-transform: uppercase;
+  line-height: 1.2;
+  position: relative;
+  margin-bottom: 20px;
+  &:before {
+    content: '“';
+    font-size: 8.2rem;
+    position: absolute;
+    left: -40px;
+    top: -20px;
+    line-height: 1;
+  }
+  &:after {
+    content:'”';
+    font-size: 8.2rem;
+    line-height: 0;
+    position: relative;
+    top: 45px;
   }
 }
