@@ -1152,15 +1152,6 @@ h3.normal-title {
   clear: both;
 }
 
-.sign-up {
-  margin-top: 40px;
-  border: 1px solid $deep-red;
-  padding: 15px;
-  h4 {
-    margin-bottom: 5px;
-  }
-}
-
 .take-back {
   padding-bottom: 10px;
   display: inline-block;
@@ -1168,45 +1159,6 @@ h3.normal-title {
 
 html.pum-open.pum-open-overlay.pum-open-scrollable body>[aria-hidden] {
   padding-right: 0;
-}
-
-.pum-theme-1299 {
-  .pum-container {
-    background-color: $deep-red !important;
-    padding: 40px 40px 20px !important;
-    box-shadow: 6px 6px 0 rgba(0,0,0, .5) !important;
-    border: 1px solid #ccc !important;
-  }
-  .pum-title {
-    text-align: center !important;
-    text-transform: uppercase !important;
-    font-family: 'Julius Sans One', sans-serif !important;
-    font-size: 60px !important;
-    line-height: 1.2 !important;
-    color: #fff !important;
-  }
-  .pum-content + .pum-close {
-    top: 10px !important;
-    right: 10px !important;
-    box-shadow: none !important;
-    text-shadow: none !important;
-    background-color: transparent !important;
-    font-size: 34px !important;
-    &:focus,
-    &:active {
-      outline: none;
-    }
-  }
-}
-
-.sign-up-form {
-  label {
-    color: #fff;
-    font-size: 20px;
-  }
-  .form-control {
-    background-color: transparent;
-  }
 }
 
 // landing page
@@ -1318,5 +1270,44 @@ html.pum-open.pum-open-overlay.pum-open-scrollable body>[aria-hidden] {
     line-height: 0;
     position: relative;
     top: 45px;
+  }
+}
+
+
+.sign-up {
+  margin-top: 40px;
+  border: 1px solid $deep-red;
+  padding: 15px;
+  h4 {
+    margin-bottom: 5px;
+  }
+}
+
+.sign-up-form {
+  padding: 50px 60px 60px;
+}
+
+.pum-theme-1307 {
+  .pum-container {
+    padding: 0 !important;
+  }
+  .pum-title {
+    background-color: $deep-red !important;
+    padding: 30px 0 !important;
+  }
+  .pum-content + .pum-close {
+    background-color: transparent !important;
+    top: 10px !important;
+    right: 10px !important;
+    &:focus,
+    &:active {
+      outline: none;
+    }
+    &:before {
+      content: '\f057';
+      font-family: FontAwesome;
+      color: #fff;
+      font-size: 24px;
+    }
   }
 }
